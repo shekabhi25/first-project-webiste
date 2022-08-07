@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABHI's RAILWAY</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        /* font-family: 'Baloo Bhai', cursive;
+        font-family: 'Baloo Bhai', cursive; */
+        font-family: 'Bree Serif', serif;
+        padding: 0;
+        margin: 0;
+        /* background: url('https://cdn.dnaindia.com/sites/default/files/styles/full/public/2020/07/30/916309-725790-bullet-train-file.jpg'); */
+        background :url('bg.png') no-repeat center center/cover;
+        height: 720px;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 50px;
+        /* filter: invert(100%); */
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 55%;
+        margin: 20px auto;
+        border: 2px solid rgb(98, 0, 255);
+
+    }
+
+    .right {
+        position: absolute;
+        right: 0px;
+        top: 4px;
+        display: inline-block;
+        /* border: 6px solid rgb(229, 255, 0); */
+
+    }
+
+    .navbar {
+        display: inline-block;
+        background-color: rgba(248, 183, 108, 0.726);
+        border-radius: 30px;
+        position: fixed;
+        /* position: sticky; */
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+        margin: 13px 20px;
+
+        color: white;
+    }
+
+    .navbar li a {
+
+
+        color: rgb(5, 4, 4);
+        text-decoration: none;
+        /* display: inline-block;
+         */
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    navbar li a.active {
+        text-decoration: underline;
+        color: rgb(33, 14, 141);
+    }
+
+    .btn {
+        background-color: rgba(12, 12, 12, 0.288);
+        /* font-family: 'Baloo Bhai', cursive; */
+        font-family: 'Bree Serif', serif;
+        margin: 0px 9px;
+        color: rgb(238, 235, 235);
+        padding: 2px 5px;
+        border: 2px solid rgb(14, 3, 3);
+        border-radius: 10px;
+        font-size: 15px;
+
+    }
+
+    .btn2 {
+        background-color: rgba(0, 0, 0, 0.404);
+        /* font-family: 'Baloo Bhai', cursive; */
+        font-family: 'Bree Serif', serif;
+        top: 10px;
+        margin: 0px 9px;
+        color: rgb(232, 238, 232);
+        padding: 2px 5px;
+        border: 2px solid rgb(2, 0, 0);
+        border-radius: 10px;
+        font-size: 15px;
+
+    }
+
+    .btn:hover {
+        background-color: whitesmoke;
+        color: rgba(9, 9, 10, 0.966);
+       
+        
+
+    }
+
+    .btn2:hover {
+        background-color: whitesmoke;
+        color: rgba(9, 9, 10, 0.966);
+
+    }
+
+    .search {
+        float: right;
+        color: rgb(14, 11, 11);
+        /* padding: 12px 75px; */
+        /* top: 32px; */
+    }
+
+    .container {
+        /* font-family: 'Baloo Bhai', cursive;
+        border: 2px solid rgb(91, 83, 207);
+        margin: 111px 301px;
+        padding: 56px 2px;
+        width: 33%;
+        border-radius: 54px; */
+        /* background-color: rgb(184 234 195 / 48%); */
+        
+        font-family: 'Bree Serif', serif;
+        /* border: 2px solid rgb(91, 83, 207); */
+    margin: 187px -3px;
+    padding: 45px 124px;
+    width: 40%;
+    border-radius: 54px;
+          
+    }
+    .form-group input{
+        font-family: 'Bree Serif', serif;
+
+        font-size: 20px;
+    text-align: center;
+    display: block;
+    width: 66%;
+    padding: 0px;
+    border: 2px solid black;
+    margin: 2px auto;
+
+    }
+    .container h1 {
+        text-align: center;
+        color:#f3f81a;
+}
+.container  button{
+    display: block;
+    width: 23%;
+    margin: auto;
+    color: whitesmoke;
+    background-color: black;
+}
+.container extra{
+    color: red;
+}
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">                
+            
+            <img src="logo.png" alt="">
+            <div>ABHI's RAILWAY</div>
+        </div>
+        <!-- M.id box for navbar -->
+        <div class="mid">
+            
+            <ul class="navbar">
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='indexfood.html' target="_blank">Order food</a></li>
+                <li><a href='indexcontact.html' target="_blank">Contact Us</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search trains">
+            </div>
+            
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button><button class="btn">Email Us</button>
+            <button class="btn2">sign up</button><button class="btn2">log in</button>
+        </div>
+        
+    </header>
+    
+    <div class="container">
+        
+        <h1>BOOK YOUR SEAT NOW </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="First Name" >
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Last Name" >
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="mobile Numeber " >
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Email id " >
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Pick Up Point" >
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Your Destination " >
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Date " >
+            </div>
+           
+            <button></button> class="btn">Submit</button>
+
+     
+   
+    
+</body>
+
+</html>
